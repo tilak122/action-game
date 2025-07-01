@@ -2,7 +2,7 @@ console.log("drogo")
 score=0;
 cross=true;
 let audiogame=new Audio('game.mp3')
-let music=new Audio('6.mp3')
+
 
 document.onkeydown=function(e){
     console.log("key code is:",e.keyCode)
@@ -11,7 +11,7 @@ document.onkeydown=function(e){
         dino.classList.add('animateDino');
         setTimeout(()=>{
             dino.classList.remove('animateDino');
-            music.play();
+
 
         },700);
     }
@@ -49,7 +49,7 @@ if(offsetX< 100 && offsetY< 52){
     setTimeout(()=>{
         
         audiogame.pause();
-        music.pause();
+    
 
         
     },1000);
